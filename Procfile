@@ -1,0 +1,1 @@
+worker: telegram_arenda_bot_heroku
