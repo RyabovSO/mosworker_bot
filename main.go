@@ -127,7 +127,7 @@ func main() {
 					} else if (update.Message.Text == mainMenuComplete.Keyboard[0][0].Text || update.Message.Text == mainMenuBackAndSkip.Keyboard[0][1].Text){
 						bot.Send(tgbotapi.NewMessage(chatId, cs.Category+"\n"+cs.Text+"\n\nДобавлено пользователем @"+update.Message.From.UserName+" через @"+bot.Self.UserName))
 						msg := tgbotapi.NewMessage(update.Message.Chat.ID, "")
-						msg.Text = "Ваше объявление будет опубликовано после проверки модератором на @channel_name\n\nТекст вашго объявления:\n\n"+cs.Text
+						msg.Text = "Ваше объявление будет опубликовано после проверки модератором на @channel_name\n\nТекст вашего объявления:\n\n"+cs.Text
 						msg.ReplyMarkup = mainMenu1		
 						bot.Send(msg)				
 						for i := 0; i < len(cs.Photo); i++ {
